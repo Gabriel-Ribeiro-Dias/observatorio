@@ -10,7 +10,6 @@ export default createGlobalStyle`
   }
 
   #root{
-    justify-content: center;
     margin: 0 auto;
   }
 
