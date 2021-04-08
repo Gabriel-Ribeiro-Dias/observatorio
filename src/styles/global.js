@@ -14,16 +14,22 @@ export default createGlobalStyle`
   }
 
   body{
-    background:'#FFFFFF 0% 0% no-repeat padding-box';
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
+    width: 100%;
   }
 
   body,input,button{
     font: 16px Montserrat, sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 
   button{
     cursor: pointer;
+  }
+
+  h1, h2, h3, h4, h5, h6, strong{
+    font-weight: bold;
   }
 
   
