@@ -7,6 +7,7 @@ export default function ContatoPage(){
       <Container>
         <NavbarComponent/>
         <Content>
+          <h1>Contato</h1>
         </Content>
       </Container>
       

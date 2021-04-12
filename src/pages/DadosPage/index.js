@@ -7,11 +7,7 @@ export default function DadosPage(){
     <Container>
       <NavbarComponent/>
       <Content>
-        <MapContainer>
-        </MapContainer>
-
-        <DadosContainer>  
-        </DadosContainer>
+        <h1>Dados</h1>
       </Content>
       
     </Container>
