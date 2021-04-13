@@ -10,7 +10,7 @@ export const Content = styled.div`
   padding: 0px 8rem;
   width: 100%;
   @media(max-width: 910px){
-      padding: 1rem 2rem;
+      padding: 1rem 1.5rem;
     }
   @media(max-width: 718px){
     padding: 1rem 1.5rem;
@@ -24,8 +24,8 @@ export const Sessao1 = styled.div`
   margin-bottom: 130px;
   flex-wrap: wrap-reverse;
   
-  @media(max-width: 360px){
-    margin-top: 1rem;
+  @media(max-width: 414px){
+    margin-top: 0.5rem;
   }
 
   div{
@@ -55,6 +55,9 @@ export const Sessao1 = styled.div`
       margin-bottom: 29px;
       @media(max-width: 360px){
         font-size: 0.8rem;
+      }
+      @media(max-width: 375px){
+        font-size: 1rem;
       }
     }
 

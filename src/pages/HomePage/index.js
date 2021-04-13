@@ -22,7 +22,7 @@ function HomePage(){
               <p>Asadfsdf sdf sdf sdfdfsadfsad gemgemwqwqr repoger wogmpoqwkçl
                 ,f gergweom jq  jmndksfndsafsdfsdfs asg g qw wqeglms wçeofdf sadgZ</p>
               
-              <ButtonComponent url="/Dados">SSSSSSSSSSSSSSSS</ButtonComponent>
+              <ButtonComponent url="/Dados">DADOS</ButtonComponent>
             </div>     
 
           </Sessao1>
