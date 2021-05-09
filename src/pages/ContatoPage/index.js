@@ -1,16 +1,16 @@
 import React from 'react';
-import NavbarComponent from '../../components/navbar'
-import {Container, Content} from './styles'
-export default function ContatoPage(){
-  return(
+import { Container, Content } from './styles';
+import { NavbarComponent } from '../../components/widgets';
+
+export default function ContatoPage() {
+  return (
     <>
       <Container>
-        <NavbarComponent/>
+        <NavbarComponent />
         <Content>
           <h1>Contato</h1>
         </Content>
       </Container>
-      
     </>
   );
 }

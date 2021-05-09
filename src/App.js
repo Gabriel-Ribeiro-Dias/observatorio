@@ -1,18 +1,20 @@
 import React from 'react';
-import Routes from './routes'
-import {BrowserRouter} from 'react-router-dom';
+import Routes from './routes';
+import { Footer } from './components/widgets/';
+import { BrowserRouter } from 'react-router-dom';
 import GlobalStyle from './styles/global';
+//import ScrollToTop from './components/widgets/ScrollToTop';
 
-function App(){
-  return(
+function App() {
+  return (
     <>
-    <BrowserRouter>
-      <Routes />
-    </BrowserRouter>
-    <GlobalStyle/>
+      <BrowserRouter>
+        <Routes />
+        <Footer />
+      </BrowserRouter>
+      <GlobalStyle />
     </>
-
-  )
+  );
 }
 
 export default App;

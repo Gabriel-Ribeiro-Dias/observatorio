@@ -1,18 +1,16 @@
 import React from 'react';
-import NavbarComponent from '../../components/navbar'
-import {Container, Content, MapContainer, DadosContainer} from './styles'
-export default function DadosPage(){
-  return(
+import { Container, Content, MapContainer, DadosContainer } from './styles';
+import { NavbarComponent } from '../../components/widgets';
+
+export default function DadosPage() {
+  return (
     <>
-    <Container>
-      <NavbarComponent/>
-      <Content>
-        <h1>Dados</h1>
-      </Content>
-      
-    </Container>
-      
-      
+      <Container>
+        <NavbarComponent />
+        <Content>
+          <h1>Dados</h1>
+        </Content>
+      </Container>
     </>
   );
 }
