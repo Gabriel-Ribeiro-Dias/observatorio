@@ -21,6 +21,7 @@
     "styled-components": "^5.2.3",
     "vega-lib": "^4.4.0",
     "vega-lite": "^5.1.0",
+    "vega-tooltip": "^0.25.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

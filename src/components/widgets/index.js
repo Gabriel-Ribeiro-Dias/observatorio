@@ -3,5 +3,7 @@ export { default as Footer } from './Footer/Footer';
 export { default as BarChartChartJS } from './ChartComponents/ChartJS/barChart';
 export { default as LineChartChartJS } from './ChartComponents/ChartJS/lineChart';
 export { default as LineChartHighcharts } from './ChartComponents/Highcharts/lineCharts';
+export { default as BarChartHighcharts } from './ChartComponents/Highcharts/barChart';
 export { default as LineChartRechart } from './ChartComponents/Recharts/lineChart';
 export { default as BarChartRechart } from './ChartComponents/Recharts/barChart';
+//export { default as BarChartVegaLite } from './ChartComponents/VegaLite/barChart';

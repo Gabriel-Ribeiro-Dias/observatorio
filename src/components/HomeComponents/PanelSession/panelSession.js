@@ -6,19 +6,9 @@ import {
   LineChartRechart,
   BarChartRechart,
   LineChartHighcharts,
+  BarChartHighcharts,
+  //BarChartVegaLite,
 } from '../../widgets';
-
-import {
-  BarChart,
-  LineChart,
-  Line,
-  Tooltip,
-  ResponsiveContainer,
-  YAxis,
-  XAxis,
-  CartesianGrid,
-  Bar,
-} from 'recharts';
 import {
   PainelSec,
   PainelHeading,
@@ -91,7 +81,7 @@ function PanelSession({
           <PainelCard>
             <PainelCardContent>
               <PainelCardHeading>
-                Recharts Número de mortes por COVID-19
+                Recharts Número de casos de COVID-19
               </PainelCardHeading>
               <PainelCardGraph legendTop>
                 <GraphLegend top>
@@ -132,6 +122,31 @@ function PanelSession({
           <PainelCard>
             <PainelCardContent>
               <PainelCardHeading>
+                Highcharts Número de casos de COVID-19
+              </PainelCardHeading>
+              <PainelCardGraph legendTop>
+                <GraphLegend top>
+                  <GraphLegendWrapper>
+                    <LegendLabel>
+                      <LabelBox boxColor={'#071242'} />
+                      <LabelText>Casos entre trabalhadores da saúde</LabelText>
+                    </LegendLabel>
+                    <LegendLabel>
+                      <LabelBox boxColor={'#FBBC56'} />
+                      <LabelText>Casos totais no Nordeste</LabelText>
+                    </LegendLabel>
+                  </GraphLegendWrapper>
+                </GraphLegend>
+                <GraphContainer>
+                  <BarChartHighcharts />
+                </GraphContainer>
+              </PainelCardGraph>
+            </PainelCardContent>
+          </PainelCard>
+
+          <PainelCard>
+            <PainelCardContent>
+              <PainelCardHeading>
                 Highcharts Número de mortes por COVID-19
               </PainelCardHeading>
               <PainelCardGraph legendTop>
@@ -144,6 +159,8 @@ function PanelSession({
               </PainelCardGraph>
             </PainelCardContent>
           </PainelCard>
+
+          
         </PainelContainer>
       </PainelWrapper>
     </PainelSec>
@@ -152,50 +169,28 @@ function PanelSession({
 
 export default PanelSession;
 
-/**
- * BACKUP
- * 
- * 
- * <PainelCard>
+
+/**<PainelCard>
             <PainelCardContent>
               <PainelCardHeading>
-                Trabalhadores da saúde e saúde mental
+                Vegalite Número de casos de COVID-19
               </PainelCardHeading>
-              <PainelCardGraph>
-                <GraphLegend>
+              <PainelCardGraph legendTop>
+                <GraphLegend top>
                   <GraphLegendWrapper>
                     <LegendLabel>
-                      <LabelBox boxColor={'#147AD6'} />
-                      <LabelText>Dado1</LabelText>
+                      <LabelBox boxColor={'#071242'} />
+                      <LabelText>Casos entre trabalhadores da saúde</LabelText>
                     </LegendLabel>
                     <LegendLabel>
-                      <LabelBox boxColor={'red'} />
-                      <LabelText>Dado2</LabelText>
-                    </LegendLabel>
-                    <LegendLabel>
-                      <LabelBox boxColor={'green'} />
-                      <LabelText>Dado3</LabelText>
+                      <LabelBox boxColor={'#FBBC56'} />
+                      <LabelText>Casos totais no Nordeste</LabelText>
                     </LegendLabel>
                   </GraphLegendWrapper>
                 </GraphLegend>
                 <GraphContainer>
-                  <PieChartC {...PieChartProps} />
+                  <BarChartVegaLite />
                 </GraphContainer>
               </PainelCardGraph>
             </PainelCardContent>
-          </PainelCard>
-          <PainelCard>
-            <PainelCardContent>
-              <PainelCardHeading>Projeção dos casos</PainelCardHeading>
-
-              <PainelCardGraph legendTop>
-                <GraphLegend top>
-                  <GraphTitle>15 Abril - 21 Abril</GraphTitle>
-                </GraphLegend>
-                <GraphContainer>
-                  <LineChartC {...LineChart2Props} />
-                </GraphContainer>
-              </PainelCardGraph>
-            </PainelCardContent>
-          </PainelCard>
- */
+          </PainelCard> */
