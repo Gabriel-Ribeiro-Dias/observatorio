@@ -32,6 +32,7 @@ export const NewsCard = styled.a`
   width: 30rem;
   height: 34rem;
   margin: 1rem 1rem;
+  border-radius: 0.8rem;
   &:hover {
     transform: scale(1.06);
     transition: all 0.3s ease-out;

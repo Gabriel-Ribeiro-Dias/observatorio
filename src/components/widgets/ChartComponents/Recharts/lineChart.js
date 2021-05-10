@@ -6,7 +6,6 @@ import {
   ResponsiveContainer,
   YAxis,
   XAxis,
-  CartesianGrid,
 } from 'recharts';
 
 function LineChartComponent({ data }) {

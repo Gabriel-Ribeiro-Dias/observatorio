@@ -21,10 +21,10 @@ export default function NavbarComponent() {
           <a onClick={handleClick} href='/PainelTest'>
             Paineis
           </a>
-          <a onClick={handleClick} href='/'>
+          <a onClick={handleClick} href='/Analises'>
             Análises
           </a>
-          <a onClick={handleClick} href='/'>
+          <a onClick={handleClick} href='/Noticias'>
             Notícias
           </a>
           <a onClick={handleClick} href='/Parceiros'>

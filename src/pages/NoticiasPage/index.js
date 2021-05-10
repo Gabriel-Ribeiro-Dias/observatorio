@@ -1,14 +1,14 @@
 import React from 'react';
-import { Container, Content, MapContainer, DadosContainer } from './styles';
+import { Container, Content } from './styles';
 import { NavbarComponent } from '../../components/widgets';
 
-export default function DadosPage() {
+export default function NoticiasPage() {
   return (
     <>
       <Container>
         <NavbarComponent />
         <Content>
-          <h1>Dados</h1>
+          <h1>Noticias</h1>
         </Content>
       </Container>
     </>

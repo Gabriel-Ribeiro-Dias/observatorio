@@ -5,6 +5,7 @@ import {
   LineChartChartJS,
   LineChartRechart,
   BarChartRechart,
+  LineChartHighcharts,
 } from '../../widgets';
 
 import {
@@ -123,6 +124,22 @@ function PanelSession({
                 </GraphLegend>
                 <GraphContainer>
                   <LineChartRechart data={LineRechartData} />
+                </GraphContainer>
+              </PainelCardGraph>
+            </PainelCardContent>
+          </PainelCard>
+
+          <PainelCard>
+            <PainelCardContent>
+              <PainelCardHeading>
+                Highcharts Número de mortes por COVID-19
+              </PainelCardHeading>
+              <PainelCardGraph legendTop>
+                <GraphLegend top>
+                  <GraphTitle>15 Abril - 21 Abril</GraphTitle>
+                </GraphLegend>
+                <GraphContainer>
+                  <LineChartHighcharts />
                 </GraphContainer>
               </PainelCardGraph>
             </PainelCardContent>

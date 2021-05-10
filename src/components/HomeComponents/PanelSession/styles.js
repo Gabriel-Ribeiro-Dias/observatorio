@@ -40,6 +40,7 @@ export const PainelCard = styled.div`
 
   &:hover {
     transform: scale(1.06);
+    box-shadow: 0px 1px 8px #00000029;
     transition: all 0.3s ease-out;
   }
 
@@ -129,4 +130,6 @@ export const LabelText = styled.p`
 
 export const GraphContainer = styled.div`
   width: 100%;
+  height: 100%;
+  background-color: '#000';
 `;
