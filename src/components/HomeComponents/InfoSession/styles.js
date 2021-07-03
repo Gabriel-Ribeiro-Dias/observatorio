@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import { Container } from '../../../styles/global';
 
 export const InfoSec = styled.div`
-  padding: 10rem 0;
-  z-index: 999;
-`;
-export const InfoContainer = styled(Container)`
+  padding: 10rem 5rem;
   @media screen and (max-width: 414px) {
     padding: 0 3rem;
   }
   @media (max-width: 360px) {
     padding: 0 3rem;
   }
+  z-index: 999;
+`;
+export const InfoContainer = styled(Container)`
   ${Container}
 `;
 export const InfoRow = styled.div`
@@ -56,7 +56,7 @@ export const Heading = styled.h1`
   margin-bottom: 3rem;
   font-size: 2.5rem;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 800;
   color: #071242;
 `;
 export const Subtitle = styled.p`

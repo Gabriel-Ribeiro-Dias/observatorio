@@ -1,8 +1,11 @@
 import axios from 'axios';
 
+/**
+ * https://agile-thicket-66683.herokuapp.com/observatorio/api/porcentagem_casos_por_uf/2020/
+ */
+
 const api = axios.create({
-  baseURL: 'https://api.brasil.io/v1/dataset/covid19',
-  headers: { Authorization: 'Token 8496b6e858f02b7b757c10b1f401356d0cb9cf5d' },
+  baseURL: 'https://agile-thicket-66683.herokuapp.com/api',
 });
 
 export default api;

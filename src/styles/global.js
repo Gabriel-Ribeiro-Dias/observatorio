@@ -81,9 +81,8 @@ export default createGlobalStyle`
 export const Container = styled.div`
   z-index: 1;
   width: 100%;
-  max-width: 1110px;
+  max-width: 1040px;
   margin: 0 auto;
-  padding: 0 5rem;
 `;
 
 export const Background = styled.div`

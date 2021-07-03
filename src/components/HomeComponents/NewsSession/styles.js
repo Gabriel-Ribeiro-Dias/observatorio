@@ -5,6 +5,7 @@ export const NewsSec = styled.div`
   width: 100%;
   background-color: #fff;
   margin: 0 auto;
+  display: none;
 `;
 export const NewsContainer = styled.div`
   display: flex;

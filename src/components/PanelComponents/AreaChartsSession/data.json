@@ -1,0 +1,23 @@
+{
+  "data": {
+    "data_graphic": {
+      "results": [
+        {
+          "day": "5/4",
+          "total_test_posi_prof": 5,
+          "total_test_posi_nao_prof": 16,
+          "percent_confirmed_prof": 10
+        }
+      ]
+    },
+
+    "text_description": {
+      "last_data_year": "2020",
+      "total_geral_posi_test": 8672,
+      "total_posi_prof_test": 789,
+      "total_percent_posi_prof_test": 9.1,
+      "average_percent_posi_test": 0.89,
+      "average_posi_test_prof_per_day": 6
+    }
+  }
+}

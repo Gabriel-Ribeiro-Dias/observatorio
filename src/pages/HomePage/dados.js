@@ -9,7 +9,7 @@ export const HomePresentationSessionData = {
     'Nordeste, em especial a saúde dos trabalhadores da saúde',
   description:
     'Acompanhe a distribuição espacial da pandemia em todo o' +
-    'território nordestino e tenha acesso aos dados em todo o Brasil.',
+    ' território nordestino e tenha acesso aos dados em todo o Brasil.',
   buttonLabel: 'DADOS',
   imgStart: '',
   img: imgPresentationSession,

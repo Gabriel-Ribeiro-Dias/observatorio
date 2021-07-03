@@ -30,7 +30,7 @@ function InfoSession({
             <TextWrapper>
               <Heading>{headline}</Heading>
               <Subtitle>{description}</Subtitle>
-              <Link to='/Dados'>
+              <Link>
                 <Button primary>{buttonLabel}</Button>
               </Link>
             </TextWrapper>

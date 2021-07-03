@@ -7,6 +7,7 @@ export const AnalysisSec = styled.div`
   width: 100%;
   background-color: #90cbf026;
   margin: 0 auto;
+  display: none;
 `;
 export const AnalysisContainer = styled.div`
   display: flex;

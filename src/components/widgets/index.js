@@ -1,9 +1,5 @@
 export { default as NavbarComponent } from './Navbar/navbar';
 export { default as Footer } from './Footer/Footer';
-export { default as BarChartChartJS } from './ChartComponents/ChartJS/barChart';
-export { default as LineChartChartJS } from './ChartComponents/ChartJS/lineChart';
-export { default as LineChartHighcharts } from './ChartComponents/Highcharts/lineCharts';
-export { default as BarChartHighcharts } from './ChartComponents/Highcharts/barChart';
-export { default as LineChartRechart } from './ChartComponents/Recharts/lineChart';
-export { default as BarChartRechart } from './ChartComponents/Recharts/barChart';
-//export { default as BarChartVegaLite } from './ChartComponents/VegaLite/barChart';
+export { default as MapLf } from './maps/Leaflet/map';
+//export { default as MapD3 } from './maps/ReactD3/map';
+//export { default as MapHc } from './maps/Highcharts/map';

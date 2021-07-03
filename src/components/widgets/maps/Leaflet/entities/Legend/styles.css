@@ -1,0 +1,35 @@
+.info {
+  padding: 0.6rem 0.8rem;
+  font: 1.5rem Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .info {
+    display: none;
+  }
+}
+
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  text-align: left;
+  font-weight: 600;
+  line-height: 18px;
+  color: #777;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.98;
+}

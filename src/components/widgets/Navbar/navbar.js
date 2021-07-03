@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
-import { Nav, NavContainer, MobileIcon, NavMenu } from './styles.js';
+import {
+  Nav,
+  NavContainer,
+  MobileIcon,
+  NavMenu,
+  NavMenuLink,
+} from './styles.js';
 import logoImg from '../../../assets/images/saudedotrabalhador009.png';
 import { AiOutlineMenu } from 'react-icons/ai';
 
-export default function NavbarComponent() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function WidgetsNavbar({ pageName }) {
+  const [isOpen, setIsOpen] = useState();
+  const [isClicked, setIsClicked] = useState();
   const handleClick = () => setIsOpen(!isOpen);
 
   return (
@@ -15,24 +22,34 @@ export default function NavbarComponent() {
           <AiOutlineMenu size={25} color={'#071242'} />
         </MobileIcon>
         <NavMenu status={isOpen}>
-          <a onClick={handleClick} href='/'>
+          <NavMenuLink
+            Clicked={pageName === 'home'}
+            onClick={handleClick}
+            href='/'
+            active={true}
+          >
             Início
-          </a>
-          <a onClick={handleClick} href='/PainelTest'>
-            Paineis
-          </a>
-          <a onClick={handleClick} href='/Analises'>
+          </NavMenuLink>
+          <NavMenuLink
+            Clicked={pageName === 'paineis'}
+            onClick={handleClick}
+            href='/Painel'
+            active={true}
+          >
+            Painéis
+          </NavMenuLink>
+          <NavMenuLink Clicked={pageName === 'analises'} onClick={handleClick}>
             Análises
-          </a>
-          <a onClick={handleClick} href='/Noticias'>
+          </NavMenuLink>
+          <NavMenuLink Clicked={pageName === 'noticias'} onClick={handleClick}>
             Notícias
-          </a>
-          <a onClick={handleClick} href='/Parceiros'>
+          </NavMenuLink>
+          <NavMenuLink Clicked={pageName === 'parceiros'} onClick={handleClick}>
             Parceiros
-          </a>
-          <a onClick={handleClick} href='/Contato'>
+          </NavMenuLink>
+          <NavMenuLink Clicked={pageName === 'contato'} onClick={handleClick}>
             Contato
-          </a>
+          </NavMenuLink>
         </NavMenu>
       </NavContainer>
     </Nav>
