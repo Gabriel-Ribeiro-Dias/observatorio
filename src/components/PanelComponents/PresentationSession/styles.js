@@ -26,6 +26,7 @@ export const Background = styled.div`
 `;
 export const PresentationContent = styled.div`
   max-width: 1040px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -68,6 +69,11 @@ export const PresentationIcon = styled.img`
 export const ProgressCiculeLoading = styled(CircularProgress)`
   color: #fff;
   position: relative;
-  margin: 0 auto;
-  align-self: center;
+  margin-left: 10px;
+`;
+
+export const LoadingContainer = styled.div`
+  width: 100%;
+  justify-content: start;
+  align-items: baseline;
 `;

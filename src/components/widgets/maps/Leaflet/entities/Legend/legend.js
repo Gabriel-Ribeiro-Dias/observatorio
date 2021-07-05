@@ -1,33 +1,9 @@
 import L from 'leaflet';
 import { useEffect } from 'react';
 import './styles.css';
+import { getColor } from '../../../../../PanelComponents/MapSession/utils';
 
 const Legend = ({ map, data }) => {
-  const getColor = (value) => {
-    return value === 100
-      ? '#800026'
-      : 90 <= value
-      ? '#BD0026'
-      : 80 <= value
-      ? '#E31A1C'
-      : 70 <= value
-      ? '#FC4E2A'
-      : 60 <= value
-      ? '#fd6b3a'
-      : 50 <= value
-      ? '#FD8D3C'
-      : 40 <= value
-      ? '#FEB24C'
-      : 30 <= value
-      ? '#FED976'
-      : 20 <= value
-      ? '#FFEDA0'
-      : 10 <= value
-      ? '#fff6cc'
-      : 1 <= value
-      ? '#fffae6'
-      : '#f2f2f2';
-  };
   function getMinRange(value) {
     const minValue = parseInt(value);
     const minRange = Math.floor(minValue - (minValue % 10));
@@ -44,6 +20,8 @@ const Legend = ({ map, data }) => {
       const legend = L.control({ position: 'bottomright' });
       legend.onAdd = () => {
         const div = L.DomUtil.create('div', 'info legend');
+        const steps = Math.ceil((data.range.max - data.range.min) / 10);
+        console.log(steps);
         const min = getMinRange(data.range.min);
         const max = getMaxRange(data.range.max);
         let grades = [];

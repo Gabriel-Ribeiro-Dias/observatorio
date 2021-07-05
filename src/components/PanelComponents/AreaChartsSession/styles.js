@@ -34,6 +34,8 @@ export const PainelCard = styled.div`
   width: 59rem;
   height: 45rem;
   border-radius: 2.3rem;
+  justify-content: center;
+
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
   margin: 0.5rem;
 
@@ -61,6 +63,7 @@ export const PainelCardGraph = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 export const CardHeading = styled.h1`
@@ -164,6 +167,8 @@ export const EmptyPanelCard = styled.div`
 
 export const ExceptionText = styled.p`
   font-weight: 500;
+  width: 100%;
   color: #909090;
   margin-bottom: 1rem;
+  text-align: center;
 `;

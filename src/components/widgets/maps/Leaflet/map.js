@@ -2,7 +2,7 @@ import React from 'react';
 import * as L from 'leaflet';
 import { TileLayer, ZoomControl } from 'react-leaflet';
 import { MapContainerComponent } from './styled';
-import Legend from './entities/Legend/legend';
+import Legend from './Entities/Legend/legend';
 import './styles.css';
 
 const position = [-15.3333333, -54.2]; //coordenadas do Brasil

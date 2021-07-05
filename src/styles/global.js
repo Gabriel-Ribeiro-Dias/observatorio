@@ -45,37 +45,9 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
-  button, a{
+  button, a, Link{
     cursor: pointer;
   }
-  /**
-  h1, h2, h3, h4, h5, h6, strong{
-    font-weight: bold;
-
-    @media(max-width: 360px){
-        font-size: 1.2rem;
-    }
-    @media(max-width: 375px){
-        font-size: 1.4rem;
-    }
-    @media(max-width: 414px){
-        font-size: 1.5rem;
-    }
-  
-
-  }
-
-  p{
-    @media(max-width: 360px){
-        font-size: 0.8rem;
-    }
-    @media(max-width: 375px){
-        font-size: 1rem;
-    }
-    
-  }
-
-  */
   
   `;
 export const Container = styled.div`

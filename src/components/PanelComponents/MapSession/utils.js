@@ -1,5 +1,60 @@
 export const getColor = (value) => {
-  let arr = [];
+  const arr = [
+    '#800026',
+    '#99192a',
+    '#b0312f',
+    '#c44938',
+    '#d66143',
+    '#e57a51',
+    '#f19363',
+    '#fbae78',
+    '#ffc992',
+    '#ffe5b2',
+    '#ffffe0',
+    '#f2f2f2',
+  ];
+  return value === 100
+    ? arr[0]
+    : 90 <= value
+    ? arr[1]
+    : 80 <= value
+    ? arr[2]
+    : 70 <= value
+    ? arr[3]
+    : 60 <= value
+    ? arr[4]
+    : 50 <= value
+    ? arr[5]
+    : 40 <= value
+    ? arr[6]
+    : 30 <= value
+    ? arr[7]
+    : 20 <= value
+    ? arr[8]
+    : 10 <= value
+    ? arr[9]
+    : 1 <= value
+    ? arr[10]
+    : arr[11];
+};
+
+/**
+ * 
+export const getColor = (value) => {
+  const arr = [
+    '#800026',
+    '#99192a',
+    '#b0312f',
+    '#c44938',
+    '#d66143',
+    '#e57a51',
+    '#f19363',
+    '#fbae78',
+    '#ffc992',
+    '#ffe5b2',
+    '#ffffe0',
+    '#f2f2f2',
+  ];
   return value === 100
     ? '#800026'
     : 90 <= value
@@ -24,6 +79,7 @@ export const getColor = (value) => {
     ? '#fffae6'
     : '#f2f2f2';
 };
+ */
 
 export const style = (feature) => {
   return {

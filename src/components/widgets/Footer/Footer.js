@@ -38,29 +38,33 @@ function Footer() {
           <SocialMedia>
             <ProjectLogo src={logoImg} />
             <SocialIcons>
-              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+              <SocialIconLink target='_blank' aria-label='Facebook'>
                 <FiFacebook size={16} color={'#90cbf0'} />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
+              <SocialIconLink target='_blank' aria-label='Twitter'>
                 <FiTwitter size={16} color={'#90cbf0'} />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+              <SocialIconLink target='_blank' aria-label='Instagram'>
                 <FiInstagram size={16} color={'#90cbf0'} />
               </SocialIconLink>
             </SocialIcons>
           </SocialMedia>
           <FooterLinkItems>
-            <FooterLink to='/'>Início</FooterLink>
-            <FooterLink to='/'>Paineis</FooterLink>
-            <FooterLink to='/'>Análises</FooterLink>
-            <FooterLink to='/'>Notícias</FooterLink>
-            <FooterLink to='/'>Parceiros</FooterLink>
+            <FooterLink active={true} to='/'>
+              Início
+            </FooterLink>
+            <FooterLink active={true} to='/Painel'>
+              Paineis
+            </FooterLink>
+            <FooterLink>Análises</FooterLink>
+            <FooterLink>Notícias</FooterLink>
+            <FooterLink>Parceiros</FooterLink>
           </FooterLinkItems>
           <FooterLinkItems>
             <FooterLinksTitle>Dados</FooterLinksTitle>
-            <FooterLink to='/'>Casos</FooterLink>
-            <FooterLink to='/'>Projeções</FooterLink>
-            <FooterLink to='/'>Vacinação</FooterLink>
+            <FooterLink>Casos</FooterLink>
+            <FooterLink>Projeções</FooterLink>
+            <FooterLink>Vacinação</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>

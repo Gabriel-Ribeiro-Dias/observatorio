@@ -111,11 +111,15 @@ export const FooterLink = styled(Link)`
   @media screen and (max-width: 768) {
     font-weight: 400;
   }
-  &:hover {
+  ${(props) =>
+    props.active
+      ? `&:hover {
     color: #df8c07;
     transform: scale(1.2);
     transition: 0.3s ease-out;
-  }
+  }`
+      : ``};
+  cursor: ${(props) => (props.active ? 'pointer' : 'default')};
 `;
 export const WebSiteRights = styled.div`
   justify-content: center;

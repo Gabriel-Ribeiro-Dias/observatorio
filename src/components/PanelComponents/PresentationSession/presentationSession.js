@@ -8,6 +8,8 @@ import {
   PresentationDescription,
   PresentationHeader,
   PresentationHeadling,
+  ProgressCiculeLoading,
+  LoadingContainer,
 } from './styles';
 
 function PresentationSession() {
@@ -43,7 +45,12 @@ function PresentationSession() {
           </PresentationHeader>
         </PresentationHeadling>
         {status === 'pending' ? (
-          <PresentationDescription>Carregando dados...</PresentationDescription>
+          <LoadingContainer>
+            <PresentationDescription>
+              Carregando dados...
+              <ProgressCiculeLoading size={20} color={'inherit'} />
+            </PresentationDescription>
+          </LoadingContainer>
         ) : status === 'resolved' ? (
           <PresentationDescription>
             Até o dia <strong>{data.data.day}</strong> no Brasil, foram

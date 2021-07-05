@@ -3,7 +3,7 @@ import { MapLf } from '../../widgets';
 import { processCovidData } from './tasks';
 import api from '../../../services/api';
 import { onEachState, style } from './utils';
-import { MapLegend } from './entities';
+import { MapLegend } from './Entities';
 
 import {
   MapSessionContainer,
@@ -13,6 +13,9 @@ import {
   MapSessionCardDescriptionContent,
   MapSessionCardDescriptionHeader,
   MapSessionCardDescriptionContainer,
+  MapContainerComponent,
+  LoadingContainer,
+  ProgressCiculeLoading,
 } from './styles';
 
 function PanelComponentsMapSession() {
@@ -20,11 +23,12 @@ function PanelComponentsMapSession() {
   const [status, setStatus] = React.useState('pending');
   const [erro, setErro] = React.useState();
   const [statusMsg, setStatusMsg] = React.useState('');
+  const [queryYear, setQueryYear] = React.useState('2020');
   const width = window.innerWidth;
 
   React.useEffect(() => {
     api
-      .get(`/get_porcentagem_casos_por_uf/2020`)
+      .get(`/get_porcentagem_casos_por_uf/${queryYear}`)
       .then((result) => {
         setData(processCovidData(result));
         setStatus('resolved');
@@ -56,7 +60,12 @@ function PanelComponentsMapSession() {
           </MapSessionCardDescriptionContainer>
           <MapSessionCard>
             {status === 'pending' ? (
-              <div>carregando dados do mapa...</div>
+              <MapContainerComponent>
+                <LoadingContainer>
+                  carregando dados do mapa...
+                  <ProgressCiculeLoading size={20} color={'inherit'} />
+                </LoadingContainer>
+              </MapContainerComponent>
             ) : status === 'resolved' ? (
               <>
                 <MapLf
@@ -68,7 +77,9 @@ function PanelComponentsMapSession() {
                 <MapLegend data={data} />
               </>
             ) : (
-              <div>Mapa indisponível: {statusMsg}</div>
+              <MapContainerComponent>
+                Mapa indisponível: {statusMsg}
+              </MapContainerComponent>
             )}
           </MapSessionCard>
         </MapSessionCardContainer>

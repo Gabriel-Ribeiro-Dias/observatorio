@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { CircularProgress } from '@material-ui/core';
 
 export const MapSessionContainer = styled.div`
   width: 100%;
@@ -51,4 +52,33 @@ export const MapSessionCardDescriptionHeader = styled.p`
   font-size: 2.2rem;
   color: #071242;
   font-weight: 500;
+`;
+
+export const MapContainerComponent = styled.div`
+  height: 500px;
+  width: 100%;
+  border-radius: 2.3rem;
+  background-color: grey;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 700px) {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+`;
+export const ProgressCiculeLoading = styled(CircularProgress)`
+  color: #fff;
+  position: relative;
+  margin-left: 10px;
+`;
+
+export const LoadingContainer = styled.div`
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
+  display: flex;
 `;

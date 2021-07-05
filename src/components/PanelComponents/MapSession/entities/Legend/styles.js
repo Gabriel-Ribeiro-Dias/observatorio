@@ -20,6 +20,8 @@ export const Legendblock = styled.span`
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   background-color: ${(params) => {
     return params.color;
   }};
